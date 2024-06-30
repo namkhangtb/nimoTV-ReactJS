@@ -1,0 +1,47 @@
+.container-media {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
+  .icon-media {
+    margin: 0px 20px;
+    cursor: pointer;
+    svg {
+      fill: #fff;
+    }
+    &:hover svg {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .info-explain {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    span {
+      cursor: pointer;
+      &:hover {
+        color: #6c47ff;
+      }
+    }
+  }
+  .copyright {
+    line-height: 24px;
+    margin-top: 16px;
+  }
+}
+
+.split {
+  margin: 0px 32px;
+  color: #fff;
+}

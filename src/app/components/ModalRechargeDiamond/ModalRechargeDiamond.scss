@@ -1,0 +1,115 @@
+.modal-recharge-container {
+  width: 900px;
+  //   height: 600px;
+  background-color: #1a1a1a;
+  box-shadow: 0 5px 30px #000;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  .modal-recharge__header {
+    width: 100%;
+    padding: 12px 30px 0;
+    position: relative;
+    .modal-recharge__header-left {
+      display: flex;
+      align-items: center;
+      .modal-recharge__logo-nimo {
+        height: 28px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+    .modal-recharge__btn-close {
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      font-size: 16px;
+      font-weight: 700;
+      outline: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-decoration: none;
+      transition: color 0.3s;
+      z-index: 10;
+    }
+  }
+
+  .modal-recharge__line {
+    height: 1px;
+    margin-top: 8px;
+    width: 100%;
+    background-color: #323232;
+  }
+  .modal-recharge__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    .modal-recharge__body-item {
+      line-height: 23px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      color: #fff;
+      .modal-recharge__body-item__title {
+        margin-right: 20px;
+      }
+      .modal-recharge__acc-balance {
+        color: #55aeff;
+        font-size: 20px;
+      }
+      .modal-recharge__acc-balance__icon {
+        margin: 0 5px;
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+        background-image: url('https://www.nimo.tv/nms/images/diamond.8dbdd01106a393263de8acff21020d07.png');
+      }
+      .modal-recharge__nickname {
+        font-weight: 600;
+        font-size: 14px;
+        color: hsla(0, 0%, 100%, 0.6);
+      }
+    }
+    .modal-recharge__list-payment {
+      color: hsla(0, 0%, 100%, 0.6);
+      display: flex;
+      align-items: center;
+      .modal-recharge__item-payment {
+        flex-shrink: 1;
+        border-radius: 4px;
+        border: 1px solid #505050;
+        cursor: pointer;
+        font-size: 13px;
+        margin: 10px;
+        min-width: calc(25% - 20px);
+        padding: 9px 10px;
+        position: relative;
+        text-align: center;
+        &:hover {
+          background-color: #323232;
+        }
+        .modal-recharge__item-payment__type-logo {
+          height: 30px;
+          line-height: 30px;
+          margin-bottom: 10px;
+          text-align: center;
+          img {
+            max-height: 30px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}

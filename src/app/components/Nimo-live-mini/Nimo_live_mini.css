@@ -1,0 +1,227 @@
+.nimo-live-mini {
+  width: 356px;
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+.nimo-card {
+  border-radius: 2px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+  border-radius: 4px;
+  height: 100%;
+}
+.nimo-card-cover {
+  background-color: #000;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.n-as-16x9:before {
+  padding: 56.25% 0 0;
+  content: '';
+  display: block;
+  height: 0;
+  width: 100%;
+}
+.nimo-card-image {
+  border-radius: inherit;
+  height: auto;
+  margin-bottom: -3px;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.nimo-card-image img {
+  white-space: nowrap;
+  object-fit: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.nimo-card-rc-tag {
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  left: 8px;
+  max-width: 140px;
+  overflow: hidden;
+  padding: 5px 12px;
+  position: absolute;
+  text-overflow: ellipsis;
+  top: 8px;
+  white-space: nowrap;
+}
+.nimo-card-body {
+  background-color: #1a1a1a;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  padding: 10px;
+}
+.nimo-avatar {
+  -webkit-box-flex: 0;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  -webkit-flex-grow: 0;
+  flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  height: 54px;
+  width: 54px;
+
+  border-radius: 50%;
+}
+.nimo-avatar img {
+  display: block;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+}
+.nimo-rc-info {
+  color: hsla(0, 0%, 100%, 0.6);
+  display: inline-block;
+  margin-left: 20px;
+  width: 100%;
+}
+.nimo-rc-info-title {
+  display: block;
+  word-wrap: normal;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  font-weight: bold;
+  color: #fff;
+}
+.nimo-rc-info-title:hover {
+  color: #6c47ff;
+}
+.nimo-rc-info-nickname {
+  margin: 2px 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  font-weight: 500;
+}
+.n-fx-bc {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+.nimo-rc-meta-lables {
+}
+.nimo-rc-numberviewrs {
+  display: flex;
+}
+.nimo-iconviewer {
+  font-size: 12px;
+}
+.text {
+  font-size: 12px;
+}
+.fa-solid {
+  width: 20px;
+}
+/* .nimo-live-mini:hover {
+  opacity: 0.6;
+} */
+
+.nimo-rc_mask {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+.nimo-live-mini .nimo-icon-circle .fa-solid {
+  color: #ffe819;
+  font-size: 32px;
+  text-shadow: 0 0 20px rgba(255, 232, 25, 0.8);
+}
+.nimo-live-mini .nimo-icon-circle {
+  border: unset;
+  color: #fff;
+  font-size: 50px;
+  height: 50px;
+  left: 50%;
+  line-height: 50px;
+  margin: -25px 0 0 -25px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  width: 50px;
+}
+
+.nimo-icon-circle {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 32px;
+  left: 50%;
+  line-height: 32px;
+  margin-left: -18px;
+  margin-top: -18.5px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 32px;
+  opacity: 0;
+}
+.nimo-icon-circle .fa-play .fa-solid {
+  display: inline-block;
+  left: 2px;
+  position: relative;
+  z-index: 2;
+}
+.nimo-rc_mask {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.nimo-icon-circle {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.nimo-live-mini:hover .nimo-icon-circle {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.nimo-live-mini:hover .nimo-icon-circle {
+  opacity: 1;
+}
+.nimo-live-mini:hover .nimo-rc_mask {
+  opacity: 1;
+}

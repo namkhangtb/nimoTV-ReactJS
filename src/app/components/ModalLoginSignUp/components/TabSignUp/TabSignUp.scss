@@ -1,0 +1,96 @@
+.signup-tab__title {
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+}
+
+.signup-tab__input-container {
+  height: 40px;
+  background-color: #323232;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  .signup-tab__input {
+    border: none;
+    outline: none;
+    filter: none;
+    width: 100%;
+    margin: 0;
+    padding: 11px 8px;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.35;
+    background-color: #323232;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+}
+
+.signup-tab__input-phone-number-container {
+  margin-bottom: 20px;
+  .signup-tab__input-phone-number {
+  }
+}
+
+.signup-tab__input-password-container {
+  display: flex;
+  margin-bottom: 10px;
+  .signup-tab__input-password {
+  }
+  .signup-tab__btn-show-pass {
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.signup-tab__title-password-rules {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+}
+
+.signup-tab__nimo-btn {
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  padding: 0 19px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  &:focus {
+    outline: none;
+  }
+}
+
+.signup-tab__btn-signup {
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  border-color: #6c47ff;
+  color: #fff;
+  background-color: #6c47ff;
+  margin: 30px 0 10px;
+  &:hover {
+    border-color: #6c47ff;
+    background-color: #7859ff;
+  }
+}

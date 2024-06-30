@@ -1,0 +1,191 @@
+.modal-login-signup-container {
+  width: 572px;
+  height: 380px;
+  //   margin: 0 auto;
+  //   position: relative;
+  //   padding-bottom: 24px;
+  background-color: #1a1a1a;
+  box-shadow: 0 5px 30px #000;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  .modal-login-signup__header {
+    width: 100%;
+    padding: 12px 30px 0;
+    position: relative;
+    .modal-login-signup__header-left {
+      display: flex;
+      align-items: center;
+      .modal-login-signup__logo-nimo {
+        height: 28px;
+        width: 92px;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPIAAABACAMAAAAXtNroAAAApVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+4/eNVAAAANnRSTlMAmu6xuIE/RfvlI97FCEzqVBxQN8oCE/j0DcChKI3Y0m8E4bWsaWK9p1zOLReUiHvwdUk8VzMa5A6zAAAGW0lEQVRo3uWb2XaqMBRAjzNaKdIyKqNFxHlqz/9/2r0l0UjILZIXF737qXYxbZOcIaXwOCM/dKZ9+H+4JAr+xdnA/0G8MpAyhv8B6zDEGw78fjYtG+8Ywm/ndYlFlvCrcRcB8uzgF6P7bWTMTz38JoLfitlPFGSMJyYQ5U/4VXif0b41m2VJMtWQoWRf8JeMhK9sNpvtDulAhcbj+QGK0PY65KyxgNNJY2gy+kxBEWGqAsVBnpcVyDGaBeNDDE8ltVHExwBu6ChgupVK9U4eH0x4HvEOBRx3XmFkUMT8C+ozxpwFPI8ZMhTbOba1YNl65eNTL5gPNa19dGwFGU59Z5Wen8HTOFxtO6nnwiPE+mX/ch3nbW1luopm8CwGSEg8qIOZarK9VRdzVvAkzIAMcQR10Q3JRx8NnzuvF5iTQn3cNZnaKtTE6nWzFTwNsiZ9kEFv02FuFBtSYrkgxSk/uwONgjQLB5BDPeaJqln1NomeHkjAeo13/pvYz7WZBRyroJ2Qen2btV8iIHwuwxaf56xduORaNj3qhJoyXCcpf13zZLwIGUcm/wTGdAEQst0d+eA3EdU2gSVIhuv8IQ3WeZ/y+4+KEX3Oz7z+GG8onQ03TwUIM/8b/uUEeQAyoIQp3uk8cYv+VbRvYGGOoQpqvM0tfoT5oaQsCVxguCFRs4Cy/cACSuv+8Dn+m37h6fMj54DfdPnss9Oc7gZ4PKO0EfSen9+DAv1rV2LCHWQXbXD7ntr3dVCXHWpeBc/XewyRJ7ybFgEKKQfWT/y3sjnN2wodikQ2l82qlLEFd0xFym/lQ3dImdAFYWMZzWMLFP+NMip1My2h8kC0s6fmgS5z6yhj72FlTCyyKBIsKnttvGJrCuvVLfa4rU7OkhxEPnRt3uELczyhciTavz3Tfq+WMi4eVsa2/3Z584kgU1aD61xe6ACmdyJLlz0z394OC4H16HKxpAtC5bNolLfa92Otaiorb1XKPJzyiQ7wwgSCeo3Qrz8rq1oxsm5tcv+yMksizojLjF0ybLWU0b4AZSmjbJFRd96B8amQKG+KlYvJ68UsfAxBrAzW7KiMv4Bn4SDOaipj25NWZk3Pm6jB7/+svLXvT43JoKdMmcdU6fSY+AuXXTTreHWVca5XTuz1Hu/x1zflrqiIjwNu4QmVoUW25+7juqZyymXc8fdFUhMYDyuv+zYNPG6V8gekDl5xUuhclV0yhy9QJCVztkJ5gzmbuy3pHlQq+0ifXkJ5DBOaU6ZqxcT+ANi2jkS4pQNT9sjYmCAq7xTzZ2XosqrzQgLLtlp5jJSOJ6EMERISs2qU/6Keo310VgHulAf0SjxkYeoVygPiaQFAQsuQamWDZRvfqq8M1zW6qxplRkF5IljKrMjcVChDeO2MdYWdUKnMaEdxbWXIkHCSUWZX4iGpa1ulnJLfxLCnmjWUCZ24tnK8RMJKRplatPn76lVruViOrFTyFZ3rK2NUU5l1gqi8GhLK6rVkElXEAVQp0/pjfaDHSyh36iuDPkeKhDL9aQoFVHLJfbWyZSMjlVH2JZRJKySrnNKnFaXO92plaOENTZVQbm9klKFvyyu7Gl0W5UbPgAeUPbzRg/rK4RdIKcNEkVRmRbbSU4FgXQeuX6HMyhFahtRW1hYmSCpDJK9srpEw7L1bptX3j0jI4CHlAdv6q6ls+y6AtDL40sqgD1HE2n1MGUIkbB5UTpCQjGRq7DsyaWX4ouMqbM+qlVO2xVOpzCKPcQGCvHI8RcJFpNwRKLMm2QsqX9jglcvlyBluOCzvCZ2nznoFPLzdSVQczQDKm9OOewujRq4jzLD74lR0uXd3nH0MAlxFGMgPfNnyQjpPWVbsT4/cNFa4tKnndzqxUZzclo6mA5T32RJgeInNhFv6T8vwBByWxt7QY4274oIke2FBGPfGnQtwWL7RpXdWD+POmR66yPyygu5ni7g4hJNWNxyuP3akvRTiZo7WgxJf3fWiXJ58giQBbVybxCstYiVgWz7QKFSHbgpLYdAevFmQma3p8itZGUGz0MkwhxLOUVPfSu/RGvoM9bBmmHO0oGmoBhKWLP5XMzq0kTCB5rGdI8UZJ61HmHXz5NTI2EXw5iiND83EmqIcdsPecrsjPhxRgmmj/wPS2mtYk/EAGo558ZdhGx9BmRtJuoVm8gdWp9DbyVMtvQAAAABJRU5ErkJggg==)
+          no-repeat center/contain;
+      }
+      .modal-login-signup__btn-tab {
+        margin-left: 30px;
+        color: #ffffff66;
+        font-size: 14px;
+        line-height: 21px;
+        height: 36px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .modal-login-signup__btn-tab-actived {
+        color: #ffffff;
+        &::after {
+          background-color: #fff;
+          bottom: -8px;
+          content: '';
+          display: block;
+          height: 3px;
+          position: absolute;
+          width: 100%;
+        }
+      }
+    }
+    .modal-login-signup__btn-close {
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      font-size: 16px;
+      font-weight: 700;
+      outline: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-decoration: none;
+      transition: color 0.3s;
+      z-index: 10;
+    }
+  }
+
+  .modal-login-signup__line {
+    height: 1px;
+    margin-top: 8px;
+    width: 100%;
+    background-color: #323232;
+  }
+
+  .modal-login-signup__body {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    padding: 14px 0;
+    word-wrap: break-word;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.4);
+    .modal-login-signup__body-first {
+      margin: 0 42px;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+    }
+    .modal-login-signup__line-vertical {
+      height: auto;
+      width: 1px;
+      background-color: #323232;
+    }
+    .modal-login-signup__body-second {
+      margin: 0 20px;
+      width: 167px;
+      display: flex;
+      flex-direction: column;
+      .modal-login-signup__third-login-title {
+        color: rgba(255, 255, 255, 0.4);
+        line-height: 16px;
+        margin-bottom: 10px;
+        word-wrap: break-word;
+        font-size: 14px;
+        overflow-wrap: break-word;
+        text-align: start;
+        text-size-adjust: 100%;
+      }
+      .modal-login-signup__third-login-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 12px;
+        line-height: 14px;
+        // width: 141px;
+        // height: 20px;
+        padding: 6px 12px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #505050;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+          background-color: #323232;
+        }
+        .modal-login-signup__third-login-item__icon {
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 20px;
+          margin-right: 16px;
+          width: 20px;
+          flex-shrink: 0;
+        }
+
+        .icon-bg-fb {
+          background-image: url('https://www.nimo.tv/nms/images/fb.cef7e0196a425b1048e237b066853fc3.png');
+        }
+
+        .icon-bg-google {
+          background-image: url('https://www.nimo.tv/nms/images/gg.aa32e0112633342e04844fbfc7b63a0d.png');
+        }
+
+        .icon-bg-apple {
+          background-image: url('https://www.nimo.tv/nms/images/apple.6045241a83e236239d9a7b1347b41934.png');
+        }
+
+        .icon-bg-twitter {
+          background-image: url('https://www.nimo.tv/nms/images/tw.d0d9e4853afe6acaad9577a0f36134b2.png');
+        }
+
+        .icon-bg-line {
+          background-image: url('https://www.nimo.tv/nms/images/line.92f59089d2a65e1d6a2d1c0b817703f1.png');
+        }
+      }
+      .modal-login-signup__body-second__foot {
+        line-height: 12px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.4);
+        overflow-wrap: break-word;
+        text-align: start;
+        text-size-adjust: 100%;
+        // flex-shrink: 0;
+        // display: flex;
+        // align-items: flex-start;
+        // justify-content: flex-start;
+        a {
+          display: inline-block;
+          font-size: 12px;
+          line-height: 12px;
+          height: 12px;
+          text-decoration: none;
+          background-color: transparent;
+          color: #6c47ff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

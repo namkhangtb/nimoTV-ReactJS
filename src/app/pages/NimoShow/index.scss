@@ -1,0 +1,108 @@
+.container-nimoshow-screen {
+  //   padding: 0px 50px;
+  overflow: auto;
+  width: calc(100% - 220px);
+  color: #fff;
+  .container-nimoshow-banner {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+    .mark-banner-nimoshow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 830px;
+      background: linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.5));
+    }
+    .banner-nimoshow-title {
+      position: absolute;
+      top: 40px;
+      left: 50px;
+      h1 {
+        font-size: 46px;
+        font-weight: 700;
+        line-height: normal;
+        max-width: 680px;
+        margin-bottom: 10px;
+      }
+      .count-event-nimoshow {
+        display: flex;
+        img {
+          width: 16px;
+          margin-right: 8px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .container-nimoshow-content {
+    padding: 0px 50px;
+    overflow: auto;
+    color: #fff;
+
+    .nimoshow-content-title {
+      padding: 0px 5px;
+      margin: 0px 0px 20px 0px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .select-country-container {
+      padding: 0px 5px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.35;
+      .select-box-country {
+        // display: block;
+        line-height: 36px;
+        margin-left: 11px;
+        margin-right: 11px;
+        position: relative;
+        background-color: #252525;
+        border-color: #303030;
+        color: #fff;
+        cursor: pointer;
+        height: 38px;
+        width: 150px;
+        position: relative;
+        border-radius: 4px;
+        padding-left: 11px;
+
+        // -webkit-appearance: none;
+        // -moz-appearance: none;
+        // appearance: none;
+        padding-right: 11px;
+        option {
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          padding: 8px 11px;
+          // color: #5a5a5a;
+          &:hover {
+            background-color: #323232;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .all-niomshow-preview {
+      width: 100%;
+    }
+  }
+}
+
+.w-20 {
+  width: 20%;
+  display: inline-block;
+}

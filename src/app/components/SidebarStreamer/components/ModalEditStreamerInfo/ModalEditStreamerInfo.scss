@@ -1,0 +1,135 @@
+.modal-edit-streamer-info-container {
+  width: 900px;
+  //   height: 600px;
+  background-color: #1a1a1a;
+  box-shadow: 0 5px 30px #000;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  .modal-edit-streamer-info__header {
+    width: 100%;
+    padding: 12px 30px 0;
+    position: relative;
+    .modal-edit-streamer-info__header-left {
+      display: flex;
+      align-items: center;
+      .modal-edit-streamer-info__logo-nimo {
+        height: 28px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+    .modal-edit-streamer-info__btn-close {
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      font-size: 16px;
+      font-weight: 700;
+      outline: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-decoration: none;
+      transition: color 0.3s;
+      z-index: 10;
+    }
+  }
+
+  .modal-edit-streamer-info__line {
+    height: 1px;
+    margin-top: 8px;
+    width: 100%;
+    background-color: #323232;
+  }
+  .modal-edit-streamer-info__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    .modal-edit-streamer-info__body-item {
+      line-height: 23px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      color: #fff;
+      .modal-edit-streamer-info__body-item__title {
+        margin-right: 20px;
+        min-width: 130px;
+        font-size: 16px;
+      }
+      .modal-edit-streamer-info__input-container {
+        height: 40px;
+        background-color: #323232;
+        overflow: hidden;
+        position: relative;
+        border-radius: 4px;
+        flex-grow: 1;
+        .modal-edit-streamer-info__input {
+          border: none;
+          outline: none;
+          filter: none;
+          width: 100%;
+          margin: 0;
+          padding: 11px 8px;
+          overflow: visible;
+          font-family: inherit;
+          font-size: 100%;
+          line-height: 1.35;
+          background-color: #323232;
+          color: hsla(0, 0%, 100%, 0.6);
+        }
+      }
+    }
+
+    .modal-edit-streamer-info__nimo-btn-container {
+      text-align: right;
+      .modal-edit-streamer-info__nimo-btn {
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 400;
+        height: 32px;
+        padding: 0 19px;
+        position: relative;
+        text-align: center;
+        touch-action: manipulation;
+        -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        white-space: nowrap;
+        &:focus {
+          outline: none;
+        }
+      }
+      .modal-edit-streamer-info__btn-edit {
+        height: 40px;
+        line-height: 40px;
+        max-width: 120px;
+        border-color: #6c47ff;
+        color: #fff;
+        background-color: #6c47ff;
+        margin: 10px 0;
+
+        &:hover {
+          border-color: #6c47ff;
+          background-color: #7859ff;
+        }
+      }
+    }
+  }
+}

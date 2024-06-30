@@ -1,0 +1,144 @@
+.profile-screen-container {
+  background-color: #1a1a1a;
+  flex-grow: 1;
+  padding: 30px 49px;
+}
+
+.info-label {
+  color: hsla(0, 0%, 100%, 0.4);
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.info-data {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.diamond-btn:hover {
+  background-color: #ffb300;
+}
+
+.payment-method:hover {
+  background-color: #323232;
+}
+
+.selected-method {
+  border-color: #622df7 !important;
+  color: #622df7 !important;
+}
+
+.close-btn:hover {
+  color: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: hsla(0, 0%, 100%, 0.2) !important;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.edit-info-user__nimo-btn {
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 32px;
+  padding: 0 19px;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  min-width: 80px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.edit-info-user__input-upload-avatar {
+  height: 40px;
+  line-height: 34px;
+  // width: 100%;
+  border-color: #6c47ff;
+  color: #fff;
+  background-color: #6c47ff;
+  margin: 10px 0 10px 20px;
+  border: none;
+  padding: 0;
+  &:hover {
+    border-color: #6c47ff;
+    background-color: #7859ff;
+  }
+}
+.edit-info-user__btn-save {
+  height: 40px;
+  line-height: 34px;
+  // width: 100%;
+  border-color: #6c47ff;
+  color: #fff;
+  background-color: #6c47ff;
+  margin: 0 0 0 20px;
+  border: none;
+  padding: 0;
+  &:hover {
+    border-color: #6c47ff;
+    background-color: #7859ff;
+  }
+}
+.edit-info-user__btn-cancel {
+  height: 40px;
+  line-height: 40px;
+  max-width: 120px;
+  border-color: #fc3e3e;
+  color: #fff;
+  background-color: #fc3e3e;
+  margin: 0 0 0 20px;
+
+  &:hover {
+    border-color: #fc3e3e;
+    background-color: #fc5656;
+  }
+}
+.profile-screen__avatar-container {
+  width: 120px;
+  height: 120px;
+  // background-image: url(https://img.nimo.tv/t/default_avatar_st1.png/w120_l0/img.webp);
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.edit-info-user__input-container {
+  height: 40px;
+  background-color: #323232;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  margin-left: 20px;
+  .edit-info-user__input {
+    border: none;
+    outline: none;
+    filter: none;
+    width: 100%;
+    margin: 0;
+    padding: 11px 8px;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.35;
+    background-color: #323232;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+}

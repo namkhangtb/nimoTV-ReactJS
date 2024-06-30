@@ -1,0 +1,476 @@
+.container-watchstream-screen {
+  overflow: auto;
+  width: calc(100% - 220px);
+  color: #fff;
+  .bg-nimo-room-watchstream {
+    width: 100%;
+    background-color: #000d14;
+    background-position-x: center;
+    background-position-y: 300px;
+    background-repeat: repeat-y;
+    min-height: -webkit-calc(100vh + 60px);
+    min-height: calc(100vh + 60px);
+    .container-banner-watchstream {
+      width: 100%;
+      height: 300px;
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+      cursor: default;
+      display: block;
+      position: static;
+      width: 100%;
+    }
+    .container-nimo-room {
+      margin-top: -60px;
+      box-sizing: border-box;
+      padding: 8px 8px 0 20px;
+      position: relative;
+      .nimo-room__main__container {
+        margin-bottom: 30px;
+        display: inline-block;
+        margin-right: 8px;
+        vertical-align: top;
+        z-index: 998;
+        width: calc(100% - 358px);
+        // height: calc(100vh - 76px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        .m-bt-30px {
+          margin-bottom: 30px !important;
+          .nimo-room__header-player {
+            display: flex;
+            background-color: rgb(26, 26, 26);
+            border-radius: 4px 4px 0 0;
+            padding: 10px;
+            .nimo-room_avatar {
+              margin-right: 5px;
+              img {
+                width: 60px;
+                height: 60px;
+              }
+            }
+            .nimo-room_info {
+              display: flex;
+              flex-direction: column;
+              .nimo-room_title-text {
+                margin: 0px 10px 8px;
+                .nimo-room_title-name {
+                  font-size: 22px;
+                  font-weight: 700;
+                  margin-right: 5px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  word-wrap: normal;
+                  white-space: nowrap;
+                  max-width: 305px;
+                }
+                .nimo-room_toolbar {
+                }
+              }
+              .nimo-room_sub-title {
+                display: flex;
+                align-items: center;
+                line-height: 1.35;
+                h1 {
+                  margin: 0px 10px;
+                  font-size: 12px;
+                }
+                .nimo-room_last-stream {
+                  margin: 0px 10px;
+                  color: rgba(255, 255, 255, 0.6);
+                  font-size: 12px;
+                }
+                .nimo-room_audience {
+                  display: flex;
+                  align-items: center;
+                  margin: 0px 10px;
+                  img {
+                    width: 14px;
+                  }
+                  span {
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 12px;
+                    margin: 0px 4px;
+                  }
+                }
+                .nimo-room_followers {
+                  margin: 0px 10px;
+                  span {
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+          .nimo-room__player {
+            padding: 20px 0px;
+            background-color: #000;
+            outline: none;
+            overflow: hidden;
+            padding-right: 0 !important;
+            z-index: 0;
+            video {
+              height: 100%;
+              object-fit: contain;
+              outline: none;
+              width: 100%;
+            }
+          }
+          .nimo-room__gift {
+            height: 80px;
+            background-color: #1a1a1a;
+            border-radius: 0 0 4px 4px;
+            padding: 0px 10px;
+            display: flex;
+            justify-content: space-between;
+            .nimo-room__gift-left {
+              display: flex;
+            }
+            .nimo-room__gift-right {
+              display: flex;
+              flex-flow: 1;
+              .nimo-room__shop-gift {
+                padding: 12px 10px;
+                display: flex;
+                .nimo-room__gift-item {
+                  border: 1px solid;
+                  padding: 5px;
+                  border-color: #323232;
+                  margin: 0px 4px;
+                  cursor: pointer;
+                  position: relative;
+                  .nimo-room__gift-item_icon {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .watchstream-popover__gift {
+                  // display: none;
+                  position: absolute;
+                  bottom: calc(100% + 5px);
+                  // top: 100%;
+                  // right: -4px;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  // width: 140px;
+                  z-index: 9999;
+                  overflow: hidden;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  .watchstream-screen__popover__content {
+                    background-color: #1e1e1e;
+                    border-color: #1e1e1e;
+                    border-radius: 4px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                    font-weight: 400;
+                    padding: 10px 20px;
+                    .watchstream-screen__popover-arrow {
+                      border-top-color: inherit;
+                      border-top-style: solid;
+                      border-top-width: 8px;
+                      border-left: 10px solid transparent;
+                      border-right: 10px solid transparent;
+                      border-bottom: 0 solid transparent;
+                      box-shadow: none;
+                      height: 0;
+                      left: 50%;
+                      position: absolute;
+                      // top: 4px;
+                      bottom: 3px;
+                      transform: translateX(-50%);
+                      width: 0;
+                    }
+                    .watchstream-popover__gift-item {
+                      // min-width: 120px;
+                      color: rgba(255, 255, 255, 0.6);
+                      border-radius: 4px;
+                      cursor: pointer;
+                      // margin-bottom: 5px;
+                      height: 40px;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      .watchstream-popover__gift-item__label-icon {
+                        white-space: nowrap;
+                        font-size: 16px;
+                        font-weight: 400;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .nimo-room-anchor-info {
+          display: flex;
+          padding: 20px;
+          color: #fff;
+          border-radius: 4px 4px 0 0;
+          background-color: #1a1a1a;
+          // margin-bottom: 30px;
+          .nimo-room-anchor-info__info {
+            width: 100%;
+            padding: 10px 28px;
+            .nimo-room-anchor-info__main-info {
+              display: flex;
+              flex-grow: 1;
+              margin-bottom: 16px;
+              align-items: center;
+              .nimo-room-anchor-info__main-info-avatar {
+                img {
+                  width: 90px;
+                  height: 90px;
+                }
+              }
+              .nimo-room-anchor-info__main-info-name {
+                margin: 0px 20px;
+                span {
+                  font-size: 24px;
+                  font-weight: 700;
+                }
+                .count-fan {
+                  span {
+                    font-size: 14px;
+                  }
+                  .m-lr-5px {
+                    margin: 0px 5px;
+                  }
+                }
+              }
+            }
+            .nimo-room-anchor-info__announcement {
+              margin-bottom: 24px;
+              font-size: 16px;
+            }
+          }
+          .nimo-room-anchor-info__schedule {
+          }
+        }
+      }
+      .nimo-room__main__sider {
+        display: inline-block;
+        height: -webkit-calc(100vh - 76px);
+        height: calc(100vh - 76px);
+        vertical-align: top;
+        position: sticky;
+        position: -webkit-sticky;
+        width: 350px;
+        top: 8px;
+        bottom: 0;
+        .nimo-room__main__sider-container {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          background-color: rgb(30, 30, 30);
+          border-radius: 4px;
+
+          .nimo-room__sider-ranking {
+            .rank-tabs-nav {
+              display: flex;
+              margin: 0px 4px;
+              .sider-tabs-nav-item {
+                display: flex;
+                align-items: center;
+                height: 34px;
+                span {
+                  font-size: 12px;
+                  font-weight: 700;
+                }
+              }
+            }
+            .rank-item-top3 {
+              padding-top: 14px;
+              display: flex;
+              flex-direction: column;
+              .rank-item {
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                .rank-item-info {
+                  display: flex;
+                  align-items: center;
+                  flex-grow: 1;
+                  .rank-item-medal {
+                    border-radius: 50%;
+                    color: #fff;
+                    height: 16px;
+                    line-height: 16px;
+                    margin: 0 5px;
+                    text-align: center;
+                    width: 16px;
+                  }
+                  .medal-top1 {
+                    background: #fcc638;
+                    color: #7f2d16;
+                  }
+                  .medal-top2 {
+                    background: #c2d7f9;
+                    color: #2a2d6a;
+                  }
+                  .medal-top3 {
+                    background: #eab595;
+                    color: #5d1e0b;
+                  }
+                  .rank-item-avatar {
+                    background-size: 100%;
+                    margin-right: 4px;
+                    padding: 4px 9px;
+                    span {
+                      height: 24px;
+                      width: 24px;
+                      background: transparent;
+                      // line-height: 46px;
+                      overflow: hidden;
+                      text-align: center;
+                      vertical-align: middle;
+                      white-space: nowrap;
+                      color: #fff;
+                      display: inline-block;
+                      border-radius: 50%;
+                      overflow: hidden;
+                      img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                      }
+                    }
+                  }
+                  .bg-avatar-top1 {
+                    background-image: url(./assets/images/top1-bg.png);
+                  }
+                  .bg-avatar-top2 {
+                    background-image: url(./assets/images/top2-bg.png);
+                  }
+                  .bg-avatar-top3 {
+                    background-image: url(./assets/images/top3-bg.png);
+                  }
+                  .rank-item-nickname {
+                    padding: 0px 1.5px;
+                    font-size: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-wrap: normal;
+                    white-space: nowrap;
+                  }
+                }
+                .currency-diamond {
+                  display: flex;
+                  align-items: center;
+                  span {
+                    color: #458ae6;
+                    margin: 0px 5px;
+                  }
+                }
+              }
+            }
+          }
+          .nimo-room__sider-chatroom {
+            height: calc(100% - 174px);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            .sider-chatroom__message-list {
+              padding: 5px;
+              display: flex;
+              flex-direction: column;
+              background-color: #252525;
+              // background-color: red;
+              flex-grow: 1;
+              overflow-y: auto;
+              &::-webkit-scrollbar {
+                width: 8px;
+              }
+              &::-webkit-scrollbar-thumb {
+                background-color: #464646;
+                border-radius: 8px;
+              }
+              .sider-chatroom__message-item {
+                margin: 8px 10px;
+                // display: flex;
+                // align-items: center;
+                // flex-wrap: wrap;
+                .message-item__nameuser {
+                  cursor: pointer;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  word-wrap: normal;
+                  white-space: nowrap;
+                  font-size: 14px;
+                  font-weight: 700;
+                  color: rgba(255, 255, 255, 0.6);
+                  vertical-align: middle;
+                  // flex: 1;
+                }
+                .message-item-content {
+                  color: hsla(0, 0%, 100%, 0.6);
+                  word-break: break-word;
+                  vertical-align: middle;
+                  // flex: 1;
+                }
+              }
+            }
+            .sider-chatroom__box-send-message {
+              // position: absolute;
+              // bottom: 0;
+              // left: 0;
+              // right: 0;
+              padding: 10px;
+              .chat-input-wrapper {
+                display: flex;
+                align-items: center;
+                border-radius: 4px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: transparent;
+                overflow: hidden;
+                background-color: hsla(0, 0%, 100%, 0.1);
+                margin-bottom: 8px;
+                textarea {
+                  color: #fff;
+                  height: 40px !important;
+                  background-color: transparent;
+                  border: 0;
+                  font-size: 14px;
+                  line-height: 20px;
+                  overflow-x: hidden;
+                  padding: 10px 8px;
+                  resize: none;
+                  width: 100%;
+                  overflow: auto;
+                  cursor: text;
+                  outline: none;
+                }
+              }
+            }
+            .chat-action {
+              text-align: right;
+              .button-send {
+                border-color: #6c47ff;
+                background-color: #6c47ff;
+                color: #fff;
+                padding: 0px 19px;
+                border-radius: 4px;
+                background-image: none;
+                border: 1px solid transparent;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+                height: 32px;
+                position: relative;
+                text-align: center;
+                touch-action: manipulation;
+                max-width: 40%;
+                min-width: 80px;
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

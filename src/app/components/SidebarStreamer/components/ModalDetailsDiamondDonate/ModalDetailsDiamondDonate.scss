@@ -1,0 +1,113 @@
+.modal-detailsdiamond-donate-container {
+  width: 1200px;
+  height: 600px;
+  background-color: #1a1a1a;
+  box-shadow: 0 5px 30px #000;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  .modal-detailsdiamond-donate__header {
+    width: 100%;
+    padding: 12px 30px 0;
+    position: relative;
+    .modal-detailsdiamond-donate__header-left {
+      display: flex;
+      align-items: center;
+      .modal-detailsdiamond-donate__logo-nimo {
+        height: 28px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+    .modal-detailsdiamond-donate__btn-close {
+      width: 46px;
+      height: 46px;
+      line-height: 46px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      font-size: 16px;
+      font-weight: 700;
+      outline: 0;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-decoration: none;
+      transition: color 0.3s;
+      z-index: 10;
+    }
+  }
+
+  .modal-detailsdiamond-donate__line {
+    height: 1px;
+    margin-top: 8px;
+    width: 100%;
+    background-color: #323232;
+  }
+  .modal-detailsdiamond-donate__body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    .details-diamond-streamer-section {
+      .tbl-content {
+        margin-top: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-width: 0px 1px 1px 1px;
+        max-height: 80vh;
+        overflow-y: auto;
+
+        table {
+          width: 100%;
+          thead {
+            background-color: rgba(255, 255, 255, 0.3);
+          }
+
+          th {
+            padding: 20px 15px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+          td {
+            padding: 15px;
+            text-align: left;
+            vertical-align: middle;
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+          }
+        }
+        .details-diamond-streamer__table__tr {
+          width: 100%;
+          td {
+            width: 25%;
+          }
+        }
+      }
+      .modal-detailsdiamond-donate__label__nodata {
+        font-size: 16px;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+      ::-webkit-scrollbar-thumb {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+//css-table
